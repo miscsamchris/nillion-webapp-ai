@@ -1,0 +1,382 @@
+{
+	"info": {
+		"_postman_id": "17245827-3fb8-4ba6-b05e-b84133532ad2",
+		"name": "nada-backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10026001"
+	},
+	"item": [
+		{
+			"name": "generate_otp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": \"4ggouD392Kjn3iBvVyk9msnBQ4akB8dLCfgWXVmUyfmyXndMRonPoUq5ZtLHV45xS8hDGSSLUuFNEUXbHUS6J5ya\",\r\n    \"program_id\": \"4ggouD392Kjn3iBvVyk9msnBQ4akB8dLCfgWXVmUyfmyXndMRonPoUq5ZtLHV45xS8hDGSSLUuFNEUXbHUS6J5ya/generateotp\",\r\n    \"seed\": \"System\",\r\n    \"ticket_code\": 1567\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/generate_otp",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"generate_otp"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:5000/generate_otp",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": \"4ggouD392Kjn3iBvVyk9msnBQ4akB8dLCfgWXVmUyfmyXndMRonPoUq5ZtLHV45xS8hDGSSLUuFNEUXbHUS6J5ya\",\r\n    \"program_id\": \"4ggouD392Kjn3iBvVyk9msnBQ4akB8dLCfgWXVmUyfmyXndMRonPoUq5ZtLHV45xS8hDGSSLUuFNEUXbHUS6J5ya/generateotp\",\r\n    \"seed\": \"System\",\r\n    \"ticket_code\": 1567\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/generate_otp",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"generate_otp"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.9"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Aug 2024 16:59:35 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "237"
+						},
+						{
+							"key": "Access-Control-Allow-Orgin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"program_id\": \"4ggouD392Kjn3iBvVyk9msnBQ4akB8dLCfgWXVmUyfmyXndMRonPoUq5ZtLHV45xS8hDGSSLUuFNEUXbHUS6J5ya/generateotp\",\n    \"party_ids_to_store_ids\": \"12D3KooWDaySDeoKfitysdGfPdiNYSrLYbH5WzsCim2ZTeorHNPG:9e41b1a7-6d72-4fcd-92c1-5adfcf39f1af\"\n}"
+				}
+			]
+		},
+		{
+			"name": "validateotp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"party_ids_to_store_ids\": \"12D3KooWDaySDeoKfitysdGfPdiNYSrLYbH5WzsCim2ZTeorHNPG:9e41b1a7-6d72-4fcd-92c1-5adfcf39f1af\",\r\n    \"program_id\": \"4ggouD392Kjn3iBvVyk9msnBQ4akB8dLCfgWXVmUyfmyXndMRonPoUq5ZtLHV45xS8hDGSSLUuFNEUXbHUS6J5ya/generateotp\",\r\n    \"seed\": \"alicee_2345\",\r\n    \"otp\": 804649\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/validate_otp",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"validate_otp"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "generate_otp Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"party_ids_to_store_ids\": \"12D3KooWDaySDeoKfitysdGfPdiNYSrLYbH5WzsCim2ZTeorHNPG:9e41b1a7-6d72-4fcd-92c1-5adfcf39f1af\",\r\n    \"program_id\": \"4ggouD392Kjn3iBvVyk9msnBQ4akB8dLCfgWXVmUyfmyXndMRonPoUq5ZtLHV45xS8hDGSSLUuFNEUXbHUS6J5ya/generateotp\",\r\n    \"seed\": \"alicee_2345\",\r\n    \"otp\": 804649\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/validate_otp",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"validate_otp"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.9"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Aug 2024 17:00:11 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						},
+						{
+							"key": "Access-Control-Allow-Orgin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"otp\": 804649,\n        \"isvalid\": 1\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "create_program",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seed\": \"alicee_2345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/create_program",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"create_program"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create_program",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"seed\": \"test_2345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/create_program",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"create_program"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.9"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Aug 2024 16:59:27 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "221"
+						},
+						{
+							"key": "Access-Control-Allow-Orgin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user_id\": \"4ggouD392Kjn3iBvVyk9msnBQ4akB8dLCfgWXVmUyfmyXndMRonPoUq5ZtLHV45xS8hDGSSLUuFNEUXbHUS6J5ya\",\n    \"program_id\": \"4ggouD392Kjn3iBvVyk9msnBQ4akB8dLCfgWXVmUyfmyXndMRonPoUq5ZtLHV45xS8hDGSSLUuFNEUXbHUS6J5ya/generateotp\"\n}"
+				}
+			]
+		},
+		{
+			"name": "estimate_time",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"from\": 2,\r\n    \"to\": 4,\r\n    \"day_of_the_week\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/predict_eta",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"predict_eta"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "estimate_time",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"from\": 2,\r\n    \"to\": 4,\r\n    \"day_of_the_week\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/predict_eta",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"predict_eta"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.9"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 07 Aug 2024 18:33:34 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "63"
+						},
+						{
+							"key": "Access-Control-Allow-Orgin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": \"It will take 32  minutes to reach your destination.\"\n}"
+				}
+			]
+		}
+	]
+}

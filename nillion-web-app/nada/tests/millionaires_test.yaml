@@ -1,0 +1,12 @@
+---
+program: millionaires
+inputs:
+  alice_salary:
+    SecretInteger: "4"
+  bob_salary:
+    SecretInteger: "5"
+  charlie_salary:
+    SecretInteger: "6"
+expected_outputs:
+  largest_position:
+    SecretInteger: "2"
